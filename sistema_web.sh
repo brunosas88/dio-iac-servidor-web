@@ -3,18 +3,18 @@
 echo "Iniciando instalacao de servidor web via script"
 
 echo "Atualizando Servidor"
-apt update
-apt upgrade -y
+apt-get update
+apt-get upgrade -y
 
 echo "Instalando Apache2"
-apt install apache2 -y
+apt-get install apache2 -y
 
 echo "Baixando aplicacao em /tmp"
 cd /tmp/
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
 echo "Instalando Unzip"
-apt install unzip -y
+apt-get install unzip -y
 
 echo "Descompactando arquivo main.zip"
 unzip main.zip
